@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import cattleHeroBg from "@/assets/cattle-hero-bg.jpg";
+import girCowReference from "@/assets/gir-cow-reference.jpg";
 
 interface BreedResult {
   breed: string;
@@ -53,7 +54,7 @@ export const BreedDetector = () => {
           "Low maintenance"
         ],
         lifespan: "12-15 years",
-        image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=800"
+        image: girCowReference
       });
       setIsAnalyzing(false);
       toast.success("Breed detected successfully!");
