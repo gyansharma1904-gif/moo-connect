@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
+import cattleHeroBg from "@/assets/cattle-hero-bg.jpg";
 
 interface BreedResult {
   breed: string;
@@ -67,8 +68,15 @@ export const BreedDetector = () => {
 
   return (
     <section className="relative py-20 px-4 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
+      {/* Background image with overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src={cattleHeroBg} 
+          alt="Cattle farm background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/85" />
+      </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Hero Text */}
