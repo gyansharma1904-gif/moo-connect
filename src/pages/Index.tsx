@@ -1,5 +1,8 @@
 import { BreedDetector } from "@/components/BreedDetector";
 import { FeatureCards } from "@/components/FeatureCards";
+import BreedPredict from "@/pages/BreedPredict";
+...
+<Route path="/predict" element={<BreedPredict />} />
 
 const Index = () => {
   return (
@@ -29,7 +32,7 @@ const Index = () => {
       <footer className="py-12 px-4 bg-muted/50">
         <div className="container mx-auto max-w-6xl text-center">
           <p className="text-muted-foreground mb-4">
-            Built with ❤️ for Indian Farmers
+            Built with ❤️ for Indian Farmer
           </p>
           <p className="text-sm text-muted-foreground">
             Empowering farmers with AI-powered cattle management
